@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio Theme</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="My own portfolio gallery showing website">
+<meta name="author" content="Chloe Dong">
+<link rel="icon" href="images/logo.png"> 
+
+<!--main style start-->
+
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<!--main style end-->
+<!--google font style-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--font-family: 'Open Sans', sans-serif;-->
+<!--socialo fonts start-->
+<link rel="stylesheet" href="css/socialo-fonts.css">
+<link rel="stylesheet" href="css/card.css">
+<!--socialo fonts end-->
+<link rel="stylesheet" href="css/component.css">
+<script src="js/modernizr.custom.js"></script>
+
+<style>
+.navbar-default{
+	border-color:transparent;
+}	
+</style>
+
+</head>
+
+<body>
+<!--top part start-->
+<header class="navbar navbar-default topNav" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="/" class="navbar-brand"><img src="images/logo.png" alt="logo" style="width:20%"><span>Chloe Portfolio</span></a> </div>
+         <!--Menu start--> 
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav navbar-right"> <li><a href="/">home</a></li>
+        <!--<li><a id="drop1" href="#" role="button" class="dropdown-toggle">Pages</a>
+          <ul class="dropdown-menu" >
+            <li><a href="about.html">About</a></li>
+            <li><a href="comingsoon.html">Coming Soon</a></li>
+            <li><a href="404page.html">404 page</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">blog</a></li>-->
+        <li><a href="" data-toggle="modal" data-target="#contactModal">contact</a></li>
+      </ul>
+    </nav>
+       <!--Menu end--> 
+       <!--Modal Start-->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="contactModalModalLabel">Contact Me</h4>
+            </div>
+            <div class="modal-body">
+	            <div class="card">
+                   <img src="images/portfolio-img/pikachu.jpg" alt="pika" style="width:100%">
+                   <h1>Yifei Dong(Chloe)</h1>
+                   <p class="chloeTitle">UI Designer & Front-end Developer</p>
+                   <p>Technology-Enriched Learning Initiative(Teli)</p>
+                   <p><i class="fa fa-envelope" aria-hidden="true"></i>  yifei2959@gmail.com</p>
+                   <p><i class="fa fa-weixin" aria-hidden="true"></i> Fei2959 </p> 
+                   <p><button type="button" class="btn" data-dismiss="modal" id="cardButton">Close</button></p>
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+    
+</div>
+       
+  </div>
+</header>
+<!--top part end-->
+  <!--Header text start-->
+<section class="container menuBottomCon">
+  <div class="row">
+    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 topContent">
+      <h3 class="font-openBold">I am an enthusiastic front-end designer, and programmer.</h3>
+      <h4 class="font-openRegular">UI Designer & Front-end Developer in Hong Kong</h4>
+    </div>
+        <!--Header text end--> 
+    <!--Social icon start-->
+    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 socialList">
+      <ul class="list-unstyled">
+        <li><a href="#" class="facebookcircle icon" data-toggle="tooltip"
+        data-placement="bottom" title="董一霏"></a></li>
+        <li><a href="#" class="twitterbirdcircle icon" data-toggle="tooltip"
+        data-placement="bottom" title=""></a></li>
+        <li><a href="#" class="googlecircle icon" data-toggle="tooltip"
+        data-placement="bottom" title="yifei2959"></a></li>
+      </ul>
+    </div>
+     <!--Social icon start--> 
+  </div>
+</section>
+<!--common area end-->
+<div class="separator container"><span class="sepIcon iconBlog"></span></div>
+<div class="container bodyContent">
+	<h3 class="page-title" id="project-name">Projet Name</h3>
+	<div class="row">
+    	<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 blogleft">
+       	  
+          <article class="project clearfix" id="imgFrame">
+          
+          </article>
+          
+            <div class="postnav clearfix">
+           	<a href="javascript:void(0)" class="post-prev" onclick="previous();">Previous Post</a>
+            <a href="javascript:void(0)" class="post-next" onclick="next();">Next Post</a>
+           </div>
+      </div>      
+      
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-md-offset-1 col-lg-offset-1 col-sm-offset-1 col-xs-offset-0 blogsidebar">
+        	<aside class="widget" id="info">
+                <h3 class="sidebarprojecttitle">Project Category</h3>
+                    <p class="sidebarEntry" id="category"></p>
+
+                <h3 class="sidebarprojecttitle">Project Techniques</h3>
+                    <p class="sidebarEntry" id="techniques"></p>
+
+                <h3 class="sidebarprojecttitle">Date</h3>
+                    <p class="sidebarEntry" id="date"></p>
+
+                <h3 class="sidebarprojecttitle">Project Details</h3>
+                <p class="sidebarEntry" id="details"></p>
+                
+                <!--<h3 class="sidebarprojecttitle">Related Links</h3>
+                <p class="sidebarEntry" id="links"></p>-->
+          </aside>
+        </div>
+    </div>
+</div>
+
+<!--footer area start-->
+<footer class="footer">
+  <div class="container">
+    <ul class="list-unstyled footerLink"> <li><a href="/">home</a></li>
+      <!--<li><a href="about.html">about</a></li>
+      <li><a href="blog.html">blog</a></li>-->
+      <li><a href="" data-toggle="modal" data-target="#contactModal">contact</a></li>
+    </ul>
+    <p class="copyrightText">© Chloe Dong 2019. All Rights reserved</p>
+  </div>
+</footer>
+    
+<!--footer end-->
+<!--Javascriptfile start -->
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/project.js"></script>
+<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.4/jquery.lazy.min.js"></script>
+
+</body>
+</html>

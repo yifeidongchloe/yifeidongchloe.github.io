@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog> 
+   <content category="hku"> 
+       <name lang="en">Jockey Club SMART Family-Link</name>
+       <img>
+          <src>images/projects/i-connected/i-connected_dashboard.png</src>
+          <src>images/projects/i-connected/i-connected.png</src>
+          <src>images/projects/i-connected/i-connected_todo.png</src>
+          <src>images/projects/i-connected/i-connected.gif</src>
+       </img>       
+       <cata>Website</cata> 
+       <tech>HTML5,CSS3,Vue.js</tech>
+       <date>Mar 2021</date>
+       <detail> An e-platform for Jockey Club SMART Family-Link Project to minimize administrative work and enable data-driven service</detail>
+       <rlink><link>https://ic.training.jcsfl.hk/</link></rlink>
+   </content>
+   <content category="hku"> 
+       <name lang="en">JC JoyAge holistic support</name>
+       <img>
+          <src>images/projects/joyage/joyage_homepage.png</src>
+          <src>images/projects/joyage/joyage_rightmenu.png</src>
+          <src>images/projects/joyage/joyage_map.png</src>
+          <src>images/projects/joyage/joyage.gif</src>
+       </img>       
+       <cata>Website</cata> 
+       <tech>Wordpress,Adobe Illustrator</tech>
+       <date>May 2020</date>
+       <detail> A JC JoyAge holistic support project for elderly mental wellness.</detail>
+       <rlink><link>https://jcjoyage.hk/</link></rlink>
+   </content>
+   <content category="hku"> 
+       <name lang="en">JC JoyAge research website</name>
+       <img>
+          <src>images/projects/jc-research/research-jcjoyage-hk.png</src>
+          <src>images/projects/jc-research/research_jcjoyage_hk2.png</src>
+          <src>images/projects/jc-research/JC-research.gif</src>
+       </img>       
+       <cata>Website</cata> 
+       <tech>Wordpress</tech>
+       <date>Mar 2020</date>
+       <detail>A JC JoyAge holistic support project for elderly mental wellness.</detail>
+       <rlink><link>https://research.jcjoyage.hk/</link></rlink>
+   </content>
+   <content category="hku"> 
+       <name lang="en">Communication-Intensive Courses website</name>
+       <img>
+          <src>images/projects/cic/cic-homepage.png</src>
+          <src>images/projects/cic/cic.gif</src>
+       </img>       
+       <cata>Website</cata> 
+       <tech>Wordpress</tech>
+       <date>June 2019</date>
+       <detail>CI-badged courses are courses that consist of a syllabus with components that explicitly develop communication-related knowledge, skills and attributes. </detail>
+       <rlink><link>https://cics.hku.hk/</link></rlink>
+   </content>
+   <content category="hku"> 
+       <name lang="en">HKCPD hub website</name>
+       <img>
+          <src>images/projects/hkcpd/hkcpdhub.png</src>
+          <src>images/projects/hkcpd/HKCPD.gif</src>
+       </img>       
+       <cata>Website</cata> 
+       <tech>Wordpress</tech>
+       <date>Mar 2019</date>
+       <detail>The HKCPD International Conference for English teaching professionals worldwide.</detail>
+       <rlink><link>https://hkcpdhub.hku.hk/conference2021/</link></rlink>
+   </content>
+   <content category="hku"> 
+       <name lang="en">Teaching Development Grants System(TDG)</name>
+       <img>
+          <src>images/projects/tdg/TDG_Admin_c.png</src>
+          <src>images/projects/tdg/TDG_Application.gif</src>
+       </img>       
+       <cata>Website</cata> 
+       <tech>Sketch,HTML5,CSS3,JavaScript</tech>
+       <date>Nov 2017</date>
+       <detail>Apply and manage TDG, CCTDG funding in the University of Hong Kong</detail>
+       <rlink></rlink>
+   </content>
+   <content category="hku"> 
+       <name lang="en">Chinese Cultural Revolution Website</name>
+       <img>
+          <src>images/projects/chinese-revolution/the-chinese-cultral-revolution.gif</src>
+          <src>images/projects/chinese-revolution/ccch9005_404page_c.png</src>         
+       </img>       
+       <cata>Website</cata> 
+       <tech>Sketch,SASS/SCSS,Vue.js</tech>
+       <date>Jun 2018</date>
+       <detail>For students to upload their assignments and teachers analyzed their performance through data collection</detail>
+       <rlink></rlink>
+   </content>
+   <content category="hku"> 
+       <name lang="en">E-Learning Platform and Video-Vox Website</name>
+       <img>
+          <src>images/projects/e-learning/E-learning01_c.png</src>
+          <src>images/projects/video-vox/videovox_course_detail_c.png</src>
+          <src>images/projects/video-vox/videovox_playvideo_c.png</src>
+       </img>        
+       <cata>Website</cata> 
+       <tech>Sketch,Adobe Photoshop,Illustrator</tech>
+       <date>Dec 2017</date>
+       <detail>For students to learn online courses and record the studying process</detail>
+       <rlink></rlink>
+   </content>
+  <content category="hku"> 
+       <name lang="en">Pre-diabetes</name>
+       <img>
+          <src>images/projects/pre-diabetes/pre-diabetes_bloodpressure_c.png</src>
+          <src>images/projects/pre-diabetes/pre-diabetes01_c.png</src>
+          <src>images/projects/pre-diabetes/pre-diabetes.gif</src>
+       </img>        
+       <cata>Mobile Application</cata> 
+       <tech>Sketch,Adobe Photoshop,Illustrator,Proto.io</tech>
+       <date>Apr 2018</date>
+       <detail>For diabetics to record their health index and the primary users are Elders</detail>
+       <rlink>
+	      <link>https://apps.apple.com/cn/app/%E6%B8%9B%E8%B5%B0%E7%B3%96%E5%B0%BF/id1479638840</link>
+       </rlink>
+   </content>
+      <content category="hku"> 
+       <name lang="en">R4U website</name>
+       <img>
+          <src>images/projects/r4u/R4u.gif</src>
+          <src>images/projects/r4u/APSS1A21U_V.png</src>
+          <src>images/projects/r4u/UGFH1001.png</src>
+          <src>images/projects/r4u/ISOM1500.png</src>
+       </img>        
+       <cata>Website</cata> 
+       <tech>Wordpress,Adobe Illustrator</tech>
+       <date>Apr 2019</date>
+       <detail>An interactive online event featuring a UGC funded project, entitled “The Responsive University: Appreciating Content Sharing in General Education,” (also code-named as Responsive4U).</detail>
+       <rlink><link>https://tl.hku.hk/2020/06/responsive4u-e-symposium-online-conference-at-your-own-pace/</link></rlink>
+   </content> 
+   <content category="hku"> 
+       <name lang="en">Getting Interested System</name>
+       <img>
+          <src>images/projects/getting-interested/GI_Homepage_c.png</src>
+          <src>images/projects/getting-interested/GI_UI_design_c.png</src>
+          <src>images/projects/getting-interested/login_V1.0_c.png</src>
+       </img>        
+       <cata>Mobile Application</cata> 
+       <tech>Sketch,Adobe Photoshop,Illustrator</tech>
+       <date>Nov 2017</date>
+       <detail>Make the interests for students to learn courses</detail>
+       <rlink></rlink>
+   </content>
+   
+   <content category="hku"> 
+       <name lang="en">E-portfolio Project</name>
+       <img>
+          <src>images/projects/e-portfolio/E-PORTFOLIO_logo_c.jpg</src>
+          <src>images/projects/e-portfolio/E-portfolio_c.png</src>
+          <src>images/projects/e-portfolio/E-PORTFOLIO_logoV2.0_c.jpg</src>
+       </img>        
+       <cata>Application Logo, Application splash screen</cata> 
+       <tech>Sketch,Illustrator</tech>
+       <date>Apr 2018</date>
+       <detail>Help students to supervise their portfolio</detail>
+       <rlink></rlink>
+   </content>
+   <content category="hku"> 
+       <name lang="en">Sounds Cap</name>
+       <img>
+          <src>images/projects/sounds-cap/Soundscap01_c.png</src>
+          <src>images/projects/sounds-cap/soundscap02_c.png</src>
+          <src>images/projects/sounds-cap/Asset7@2x.png</src>
+       </img>        
+       <cata>Mobile Application</cata> 
+       <tech>Sketch,Adobe Photoshop,Illustrator,Proto.io</tech>
+       <date>Jun 2018</date>
+       <detail>Collect sound data</detail>
+       <!-- <rlink>
+	      <link>https://pr.to/X0PYQ8/</link>
+       </rlink> -->
+   </content>
+   <content category="hku"> 
+       <name lang="en">CASE Grammar</name>
+       <img>
+          <src>images/projects/grammar/Case_game_UI_c.png</src>
+          <src>images/projects/grammar/Case_game_ui01_c.png</src>
+          <src>images/projects/grammar/Case_Grammar_c.png</src>
+          <src>images/projects/grammar/gem01@2x_c.png</src>
+          <src>images/projects/grammar/gem02@2x_c.png</src>
+       </img>        
+       <cata>Mobile Game</cata> 
+       <tech>Sketch,Adobe Photoshop,Illustrator,Proto.io</tech>
+       <date>Oct 2018</date>
+       <detail>Improve their English abilities for students</detail>
+       <rlink></rlink>
+   </content>
+   <content category="hku"> 
+       <name lang="en">2D Action Game</name>
+       <img>
+          <src>images/projects/2D-game/SNC1111Game_bg_c.png</src>
+          <src>images/projects/2D-game/Scn1111 game@2x_c.png</src>
+          <src>images/projects/2D-game/ship@2x_c.png</src>
+          <src>images/projects/2D-game/ship02@2x_c.png</src>  
+       </img>        
+       <cata>Game</cata> 
+       <tech>Sketch,Adobe Photoshop,Illustrator,Proto.io</tech>
+       <date>Mar 2018</date>
+       <detail>For students to learn some useful skills in their spare time</detail>
+       <rlink></rlink>
+   </content>
+   <content category="polyu"> 
+       <name lang="en">MSc Final Year Project Rimo</name>
+       <img>
+          <src>images/projects/rimo/Rimo-homepage_c.png</src>
+          <src>images/projects/rimo/Rimo01-Copy_c.png</src>
+          <src>images/projects/rimo/Rimo02_c.png</src>
+          <src>images/projects/rimo/Rimo_c.png</src>
+          <src>images/projects/rimo/rimo_all_c.png</src>          
+       </img>    
+       <cata>Unity2D Game</cata> 
+       <tech>Unity3D</tech>
+       <date>Jun 2017</date>
+       <detail>A 2D Chinese adventure game for players to collect clues</detail>
+       <rlink>
+	      <link>https://youtu.be/CfUvjdJ22Y0</link>
+       </rlink>
+   </content> 
+   <content category="polyu"> 
+       <name lang="en">THE CLIMBING</name>
+       <img>
+          <src>images/projects/the-climbing/Climb02_c.png</src>
+          <src>images/projects/the-climbing/Climb03_c.png</src>
+       </img>   
+       <cata>VR Game</cata> 
+       <tech>Unity3D, HTC Vive</tech>
+       <date>Feb 2017</date>
+       <detail>A VR seriously game for players can control the character to climb the mountain. The Climbing is a cooperative project between Tampere University in Finland and The Hong Kong Polytechnic University</detail>
+       <rlink>
+	      <link>https://youtu.be/5mRVQAYzYes</link>
+       </rlink>
+   </content> 
+   <content category="polyu"> 
+       <name lang="en">DIAL “CURRENT”</name>
+       <img>
+          <src>images/projects/dial-current/Dial-current_c.png</src>
+          <src>images/projects/dial-current/Dial-current-process_c.png</src>
+       </img>    
+       <cata>Workshop</cata> 
+       <tech>Arduino,Processing</tech>
+       <date>Nov 2016</date>
+       <detail>Use a consumer level brainwave sensor to detect your state of mind and reflected it on the installation</detail>
+       <rlink>
+	      <link>https://youtu.be/Jgg-_WD2NTo</link>
+	   </rlink>
+   </content>
+   <content category="polyu"> 
+       <name lang="en">3D game “STEALTH”</name>
+       <img>
+          <src>images/projects/stealth/Chasing_GIF_c.gif</src>         
+          <src>images/projects/stealth/Shooting_Death_Patrol_c.gif</src>
+          <src>images/projects/stealth/Patrol_GIF_c.gif</src>
+       </img>   
+       <cata>Unity3D Game</cata> 
+       <tech>Unity3D</tech>
+       <date>Apr 2017</date>
+       <detail>Individual project to implement a shooting game with Unity3D platform. Utilized the AI algorithm to complete the shooting, chasing, patrolling actions of enemies in the game</detail>
+       <rlink></rlink>
+   </content>
+   <content category="polyu"> 
+       <name lang="en">3D Penthouse</name>
+       <img>
+          <src>images/projects/3D-animation/3D-Animation-Copy_c.png</src>
+          <src>images/projects/3D-animation/3D-animation01_c.png</src>
+          <src>images/projects/3D-animation/3D-animation02_c.png</src>
+       </img>   
+       <cata>3D Modeling</cata> 
+       <tech>AutoDesk Maya</tech>
+       <date>Oct 2016</date>
+       <detail>The animation story is about a bird finds and builds a home in the rooftop</detail>
+       <rlink>
+	      <link>https://youtu.be/bB59bDHANRY</link>
+	   </rlink>
+   </content>
+   <content category="hkbu"> 
+       <name lang="en">Health Kingdom</name>
+       <img>
+          <src>images/projects/healthkingdom/HealthKingdom01_c.png</src>
+          <src>images/projects/healthkingdom/Healthkingdom02_c.png</src>
+       </img>        
+       <cata>Mobile Application Prototype</cata> 
+       <tech>Proto.io</tech>
+       <date>Jul 2016</date>
+       <detail>An application for people to keep good health habits</detail>
+       <rlink>
+	      <link>https://youtu.be/D_NsRlzwN7w</link>
+	      <link>https://youtu.be/zk0Hyh5_B8I</link>
+       </rlink>
+   </content>
+   <content category="hkbu"> 
+       <name lang="en">Poster for Department of Computer Science</name>
+       <img>
+          <src>images/projects/poster/poster_eyebb2_c.png</src>
+          <src>images/projects/poster/poster_trans1_c.png</src>
+          <src>images/projects/poster/poster_trans2_c.png</src>
+       </img>        
+       <cata>Poster</cata> 
+       <tech>Adobe Photoshop</tech>
+       <date>Mar 2016</date>
+       <detail>Design a departmental poster</detail>
+       <rlink></rlink>
+   </content>     
+   <content category="hkbu"> 
+       <name lang="en">Mathematical Education Web</name>
+       <img>
+          <src>images/projects/mathematical-web/math02_c.png</src>
+          <src>images/projects/mathematical-web/answerpage_c.png</src>
+          <src>images/projects/mathematical-web/Artboard1_c.png</src>
+          <src>images/projects/mathematical-web/Badge_c.png</src>
+          <src>images/projects/mathematical-web/elephant_c.png</src>
+          <src>images/projects/mathematical-web/videopage_c.png</src>
+       </img>   
+       <cata>Website</cata> 
+       <tech>Sketch</tech>
+       <date>Apr 2016</date>
+       <detail>For high school students to learn mathematics</detail>
+       <rlink></rlink>
+   </content>
+   <content category="hku"> 
+       <name lang="en">Self-Painting Graphic</name>
+       <img>
+          <src>images/projects/painting/Painted-Graphic_c.png</src>
+          <src>images/projects/painting/Painted-Graphic02_c.png</src>
+       </img>   
+       <cata>Painting</cata> 
+       <tech>Adobe Photoshop</tech>
+       <date>Aug 2017</date>
+       <detail>The paintings include both imitation art and micro-creation art</detail>
+       <rlink></rlink>
+   </content>
+               
+</catalog>
