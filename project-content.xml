@@ -7,7 +7,7 @@
           <src>images/projects/i-connected/i-connected.png</src>
           <src>images/projects/i-connected/i-connected_todo.png</src>
           <src>images/projects/i-connected/i-connected.gif</src>
-       </img>       
+       </img>
        <cata>Website</cata> 
        <tech>HTML5,CSS3,Vue.js</tech>
        <date>Mar 2021</date>
@@ -45,13 +45,17 @@
        <name lang="en">Communication-Intensive Courses website</name>
        <img>
           <src>images/projects/cic/cic-homepage.png</src>
+          <src>images/projects/cic/cic2.png</src>
           <src>images/projects/cic/cic.gif</src>
        </img>       
        <cata>Website</cata> 
        <tech>Wordpress</tech>
        <date>June 2019</date>
        <detail>CI-badged courses are courses that consist of a syllabus with components that explicitly develop communication-related knowledge, skills and attributes. </detail>
-       <rlink><link>https://cics.hku.hk/</link></rlink>
+       <rlink>
+       <link>https://cics.hku.hk/</link>
+       <link>https://cics.hku.hk/what-are-ci-badged-courses/</link>
+       </rlink>
    </content>
    <content category="hku"> 
        <name lang="en">HKCPD hub website</name>
@@ -117,7 +121,7 @@
 	      <link>https://apps.apple.com/cn/app/%E6%B8%9B%E8%B5%B0%E7%B3%96%E5%B0%BF/id1479638840</link>
        </rlink>
    </content>
-      <content category="hku"> 
+   <content category="hku"> 
        <name lang="en">R4U website</name>
        <img>
           <src>images/projects/r4u/R4u.gif</src>
@@ -125,7 +129,7 @@
           <src>images/projects/r4u/UGFH1001.png</src>
           <src>images/projects/r4u/ISOM1500.png</src>
        </img>        
-       <cata>Website</cata> 
+       <cata>Website,Poster design</cata> 
        <tech>Wordpress,Adobe Illustrator</tech>
        <date>Apr 2019</date>
        <detail>An interactive online event featuring a UGC funded project, entitled “The Responsive University: Appreciating Content Sharing in General Education,” (also code-named as Responsive4U).</detail>
@@ -329,6 +333,18 @@
        <tech>Adobe Photoshop</tech>
        <date>Aug 2017</date>
        <detail>The paintings include both imitation art and micro-creation art</detail>
+       <rlink></rlink>
+   </content>
+   <content category="hku"> 
+       <name lang="en">FEHD course design</name>
+       <img>
+          <src>images/projects/FEHD/FEHD.png</src>
+          <src>images/projects/FEHD/FEHD.gif</src>
+       </img>   
+       <cata>Course design</cata> 
+       <tech>Articulate360, Sketch</tech>
+       <date>Aug 2019</date>
+       <detail>Design a course for Food and Environment Hygiene Department staff learning English.</detail>
        <rlink></rlink>
    </content>
                
