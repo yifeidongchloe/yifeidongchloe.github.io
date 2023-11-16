@@ -347,5 +347,20 @@
        <detail>Design a course for Food and Environment Hygiene Department staff learning English.</detail>
        <rlink></rlink>
    </content>
+
+   <content category="hku"> 
+       <name lang="en">SafeSave APP Deisgn</name>
+       <img>
+          <src>images/projects/safesave-app/web.gif</src>
+          <src>images/projects/safesave-app/display02.png</src>
+          <src>images/projects/safesave-app/app.gif</src>
+          <src>images/projects/safesave-app/design_standard.png</src>    
+       </img>
+       <cata>Website</cata> 
+       <tech>Figma, Protopie, Principle, Adobe Illustrator</tech>
+       <date>Mar 2023</date>
+       <detail> I was the designer responsible for creating the SafeSave Conceptual UI Design. Every visual element, from the logo design to the intricacies of the design standard, was meticulously crafted by me. I created this vision through wireframes, low-fidelity and high-fidelity formats, and interactive prototypes.</detail>
+       <!-- <rlink><link>https://ic.training.jcsfl.hk/</link></rlink> -->
+   </content>
                
 </catalog>

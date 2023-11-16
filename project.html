@@ -42,42 +42,66 @@
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
       <a href="/" class="navbar-brand"><img src="images/logo.png" alt="logo" style="width:20%"><span>Chloe Portfolio</span></a> </div>
          <!--Menu start--> 
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav navbar-right"> <li><a href="/">home</a></li>
-        <!--<li><a id="drop1" href="#" role="button" class="dropdown-toggle">Pages</a>
-          <ul class="dropdown-menu" >
-            <li><a href="about.html">About</a></li>
-            <li><a href="comingsoon.html">Coming Soon</a></li>
-            <li><a href="404page.html">404 page</a></li>
-          </ul>
-        </li>
-        <li><a href="blog.html">blog</a></li>-->
-        <li><a href="" data-toggle="modal" data-target="#contactModal">contact</a></li>
-      </ul>
-    </nav>
-       <!--Menu end--> 
-       <!--Modal Start-->
-    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav navbar-right"> <li><a href="/">home</a></li>
+          <!--<li><a id="drop1" href="#" role="button" class="dropdown-toggle">Pages</a>
+            <ul class="dropdown-menu" >
+              <li><a href="about.html">About</a></li>
+              <li><a href="comingsoon.html">Coming Soon</a></li>
+              <li><a href="404page.html">404 page</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html">blog</a></li>-->
+          <li><a href="" data-toggle="modal" data-target="#contactModal">contact</a></li>
+          <li><a href="" data-toggle="modal" data-target="#resumeModal">resume</a></li>
+        </ul>
+      </nav>
+       <!--Menu end-->
+       <!--Resume Modal Start-->
+      <div class="modal fade" id="resumeModal" tabindex="-1" role="dialog" aria-labelledby="resumeModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="contactModalModalLabel">Contact Me</h4>
-            </div>
-            <div class="modal-body">
-	            <div class="card">
-                   <img src="images/portfolio-img/pikachu.jpg" alt="pika" style="width:100%">
-                   <h1>Yifei Dong(Chloe)</h1>
-                   <p class="chloeTitle">UI Designer & Front-end Developer</p>
-                   <p>Technology-Enriched Learning Initiative(Teli)</p>
-                   <p><i class="fa fa-envelope" aria-hidden="true"></i>  yifei2959@gmail.com</p>
-                   <p><i class="fa fa-weixin" aria-hidden="true"></i> Fei2959 </p> 
-                   <p><button type="button" class="btn" data-dismiss="modal" id="cardButton">Close</button></p>
-                </div>
-            </div>
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="resumeModalLabel">Resume</h4>
+          </div>
+          <div class="modal-body">
+            <!-- Add iframe for resume here -->
+            <iframe src="images/resume-pdf/Chloe_CV_2023_2.pdf" width="100%" height="500px" style="border: none; outline: none;"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div><!-- /.modal-content -->
-    </div><!-- /.modal -->
-    
+      </div><!-- /.modal -->
+    </div>
+    <!--Resume Modal End--> 
+
+    <!--Contact Modal Start-->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="contactModalModalLabel">Contact Me</h4>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <img src="images/portfolio-img/pikachu.jpg" alt="pika" style="width:100%">
+              <h1>Yifei Dong(Chloe)</h1>
+              <p class="chloeTitle">UI Designer & Front-end Developer</p>
+              <p>HKU Teaching and Learning Innovation Centre(TELIC)</p>
+              <p><i class="fa fa-envelope" aria-hidden="true"></i> yifei2959@gmail.com</p>
+              <p><i class="fa fa-weixin" aria-hidden="true"></i> Fei2959 </p>
+              <p><button type="button" class="btn" data-dismiss="modal" id="cardButton">Close</button></p>
+            </div>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal -->
+    </div>
+    <!--Contact Modal End-->
 </div>
        
   </div>
@@ -92,7 +116,7 @@
     </div>
         <!--Header text end--> 
     <!--Social icon start-->
-    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 socialList">
+    <!-- <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 socialList">
       <ul class="list-unstyled">
         <li><a href="#" class="facebookcircle icon" data-toggle="tooltip"
         data-placement="bottom" title="董一霏"></a></li>
@@ -101,7 +125,7 @@
         <li><a href="#" class="googlecircle icon" data-toggle="tooltip"
         data-placement="bottom" title="yifei2959"></a></li>
       </ul>
-    </div>
+    </div> -->
      <!--Social icon start--> 
   </div>
 </section>
@@ -146,12 +170,14 @@
 <!--footer area start-->
 <footer class="footer">
   <div class="container">
-    <ul class="list-unstyled footerLink"> <li><a href="/">home</a></li>
+    <ul class="list-unstyled footerLink"> 
+      <li><a href="/">home</a></li>
       <!--<li><a href="about.html">about</a></li>
       <li><a href="blog.html">blog</a></li>-->
       <li><a href="" data-toggle="modal" data-target="#contactModal">contact</a></li>
+      <li><a href="" data-toggle="modal" data-target="#resumeModal">resume</a></li>
     </ul>
-    <p class="copyrightText">© Chloe Dong 2019. All Rights reserved</p>
+    <p class="copyrightText">© Chloe Dong 2023.</p>
   </div>
 </footer>
     

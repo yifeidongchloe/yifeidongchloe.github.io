@@ -1,57 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Chloedong Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Chloedong Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="My own portfolio gallery showing website"
+    />
+    <meta name="author" content="Chloe Dong" />
+    <link rel="icon" href="images/logo.png" />
+     
 
-  <meta name="description" content="My own portfolio gallery showing website">
-  <meta name="author" content="Chloe Dong">
-  <link rel="icon" href="images/logo.png"> 
+    <!--main style start-->
 
-  <!--main style start-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--main style end-->
+    <!--google font style-->
+    <link
+      href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--font-family: 'Open Sans', sans-serif;-->
+    <!--socialo fonts start-->
+    <link rel="stylesheet" href="css/socialo-fonts.css" />
+    <link rel="stylesheet" href="css/card.css" />
+    <!--socialo fonts end-->
+    <link rel="stylesheet" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
 
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
-  <!--main style end-->
-  <!--google font style-->
-  <link
-    href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300'
-    rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!--font-family: 'Open Sans', sans-serif;-->
-  <!--socialo fonts start-->
-  <link rel="stylesheet" href="css/socialo-fonts.css">
-  <link rel="stylesheet" href="css/card.css">
-  <!--socialo fonts end-->
-  <link rel="stylesheet" href="css/component.css">
-  <script src="js/modernizr.custom.js"></script>
+    <style>
+      .navbar-default {
+        border-color: transparent;
+      }
+    </style>
+  </head>
 
-  <style>
-    .navbar-default {
-      border-color: transparent;
-    }
-  </style>
-</head>
+  <body>
+    <!--top part start-->
+    <header class="navbar navbar-default topNav" id="top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle"
+            type="button"
+            data-toggle="collapse"
+            data-target=".bs-navbar-collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/" class="navbar-brand"
+            ><img src="images/logo.png" alt="logo" style="width: 20%" /><span
+              >Chloe Dong</span
+            ></a
+          >
+        </div>
 
-<body>
-  <!--top part start-->
-  <header class="navbar navbar-default topNav" id="top" role="banner">
-    <div class="container">
-      <div class="navbar-header">
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"><span
-            class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
-            class="icon-bar"></span> </button>
-        <a href="/" class="navbar-brand"><img src="images/logo.png" alt="logo" style="width:20%"><span>Chloe
-            Dong</span></a>
-      </div>
-
-      <!--Menu start-->
-      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="/">home</a></li>
-          <!--<li><a id="drop1" href="#" role="button" class="dropdown-toggle"  href="#">Pages</a>
+        <!--Menu start-->
+        <nav
+          class="collapse navbar-collapse bs-navbar-collapse"
+          role="navigation"
+        >
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">home</a></li>
+            <!--<li><a id="drop1" href="#" role="button" class="dropdown-toggle"  href="#">Pages</a>
           <ul class="dropdown-menu" >
             <li><a href="about.html">About</a></li>
             <li><a href="comingsoon.html">Coming Soon</a></li>
@@ -59,148 +80,320 @@
           </ul>
         </li>
         <li><a href="blog.html">blog</a></li>-->
-          <li><a href="" data-toggle="modal" data-target="#contactModal">contact</a></li>
-        </ul>
-      </nav>
+            <li>
+              <a href="" data-toggle="modal" data-target="#contactModal"
+                >contact</a
+              >
+            </li>
+            <li>
+              <a href="" data-toggle="modal" data-target="#resumeModal"
+                >resume</a
+              >
+            </li>
+          </ul>
+        </nav>
 
-      <!--Modal Start-->
-      <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h4 class="modal-title" id="contactModalModalLabel">Contact Me</h4>
-            </div>
-            <div class="modal-body">
-              <div class="card">
-                <img src="images/portfolio-img/pikachu.jpg" alt="pika" style="width:100%">
-                <h1>Yifei Dong(Chloe)</h1>
-                <p class="chloeTitle">UI Designer & Front-end Developer</p>
-                <p>Technology-Enriched Learning Initiative(Teli)</p>
-                <p><i class="fa fa-envelope" aria-hidden="true"></i> yifei2959@gmail.com</p>
-                <p><i class="fa fa-weixin" aria-hidden="true"></i> Fei2959 </p>
-                <p><button type="button" class="btn" data-dismiss="modal" id="cardButton">Close</button></p>
+        <!--Resume Modal Start-->
+        <div
+          class="modal fade"
+          id="resumeModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="resumeModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-hidden="true"
+                >
+                  &times;
+                </button>
+                <h4 class="modal-title" id="resumeModalLabel">Resume</h4>
+              </div>
+              <div class="modal-body">
+                <!-- Add iframe for resume here -->
+                <iframe
+                  src="images/resume-pdf/Chloe_CV_2023_2.pdf"
+                  width="100%"
+                  height="500px"
+                  style="border: none; outline: none"
+                ></iframe>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-default"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
               </div>
             </div>
-            <!--<div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Submit</button>
-            </div>-->
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal -->
-      </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal -->
+        </div>
+        <!--Resume Modal End-->
 
-      <!--Menu end-->
-    </div>
-  </header>
-  <section class="container menuBottomCon">
-    <!--Header text start-->
-    <div class="row">
-      <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 topContent">
-        <h3 class="font-openBold">I am an enthusiastic front-end designer, and programmer.</h3>
-        <h4 class="font-openRegular">UI Designer & Front-end Developer in Hong Kong</h4>
+        <!--Contact Modal Start-->
+        <div
+          class="modal fade"
+          id="contactModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="contactModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-hidden="true"
+                >
+                  &times;
+                </button>
+                <h4 class="modal-title" id="contactModalModalLabel">
+                  Contact Me
+                </h4>
+              </div>
+              <div class="modal-body">
+                <div class="card">
+                  <img
+                    src="images/portfolio-img/pikachu.jpg"
+                    alt="pika"
+                    style="width: 100%"
+                  />
+                  <h1>Yifei Dong(Chloe)</h1>
+                  <p class="chloeTitle">UI Designer & Front-end Developer</p>
+                  <p>HKU Teaching and Learning Innovation Centre(TELIC)</p>
+                  <p>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    yifei2959@gmail.com
+                  </p>
+                  <p><i class="fa fa-weixin" aria-hidden="true"></i> Fei2959</p>
+                  <p>
+                    <button
+                      type="button"
+                      class="btn"
+                      data-dismiss="modal"
+                      id="cardButton"
+                    >
+                      Close
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal -->
+        </div>
+        <!--Contact Modal End-->
+
+        <!--Menu end-->
       </div>
-      <!--Header text end-->
-      <!--Social icon start-->
-      <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 socialList">
+    </header>
+    <section class="container menuBottomCon">
+      <!--Header text start-->
+      <div class="row">
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 topContent">
+          <h3 class="font-openBold">
+            As a passionate UI Designer and skilled Front-End Developer based in
+            Hong Kong, I specialize in designing user-friendly interfaces and
+            bringing them to life with technical finesse.
+          </h3>
+          <h4 class="font-openRegular">
+            UI Designer & Front-end Developer in Hong Kong
+          </h4>
+        </div>
+        <!--Header text end-->
+        <!--Social icon start-->
+        <!-- <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 socialList">
         <ul class="list-unstyled">
           <li><a href="" class="facebookcircle icon" data-toggle="tooltip" data-placement="bottom" title="董一霏"></a></li>
           <li><a href="" class="twitterbirdcircle icon" data-toggle="tooltip" data-placement="bottom" title=""></a></li>
           <li><a href="" class="googlecircle icon" data-toggle="tooltip" data-placement="bottom" title="yifei2959"></a>
           </li>
         </ul>
+      </div> -->
+        <!--Social icon start-->
       </div>
-      <!--Social icon start-->
-    </div>
-  </section>
-  <div class="separator container"><span class="sepIcon intop"></span></div>
-  <!--Portfolio start-->
-  <div class="container bodyContent grid-wrap">
-    <ul class="list-unstyled portfolioList grid swipe-rotate" id="grid">
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide"><img src="images/projects/i-connected/i-connected.png" class="img-responsive"
-              alt=""></div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=0">Jockey Club SMART Family-Link</a> <span>Website
-                Design and Implementation</span></h3>
+    </section>
+    <div class="separator container"><span class="sepIcon intop"></span></div>
+    <!--Portfolio start-->
+    <div class="container bodyContent grid-wrap">
+      <ul class="list-unstyled portfolioList grid swipe-rotate" id="grid">
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/safesave-app/logo.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=25">SaveSafe App design</a
+                ><span>App Design</span>
+              </h3>
+            </div>
           </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide"><img src="images/projects/joyage/joyage_homepage.png" class="img-responsive"
-              alt=""></div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=1">JC JoyAge holistic support</a> <span>Website Design
-                and Implementation</span></h3>
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/i-connected/i-connected.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=0">Jockey Club SMART Family-Link</a>
+                <span>Website Design and Implementation</span>
+              </h3>
+            </div>
           </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide"><img src="images/projects/jc-research/jc-research-home.png" class="img-responsive"
-              alt=""></div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=2">JC JoyAge research website</a> <span>Website Design
-                and Implementation</span></h3>
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/joyage/joyage_homepage.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=1">JC JoyAge holistic support</a>
+                <span>Website Design and Implementation</span>
+              </h3>
+            </div>
           </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide"><img src="images/projects/cic/cic-homepage.png" class="img-responsive" alt="">
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/jc-research/jc-research-home.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=2">JC JoyAge research website</a>
+                <span>Website Design and Implementation</span>
+              </h3>
+            </div>
           </div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=3">Communication-Intensive Courses
-                website</a><span>Website Design and Implementation</span></h3>
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/cic/cic-homepage.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=3"
+                  >Communication-Intensive Courses website</a
+                ><span>Website Design and Implementation</span>
+              </h3>
+            </div>
           </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide"><img src="images/projects/hkcpd/hkcpd-home.png" class="img-responsive" alt="">
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/hkcpd/hkcpd-home.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=4">HKCPD hub website</a
+                ><span>Website Design and Implementation</span>
+              </h3>
+            </div>
           </div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=4">HKCPD hub website</a><span>Website Design and
-                Implementation</span></h3>
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/tdg/TDG_Admin_c.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <!--<div class="pf-slider"> <span class="nav-box clearfix"> <span href="#" class="slideLink prevLink">prev</span> <span href="#" class="slideLink nextLink">next</span> </span> <img src="http://placehold.it/300x400&text=image1" class="img-responsive" alt=""> <img src="http://placehold.it/300x400&text=image2" class="img-responsive" alt=""> <img src="http://placehold.it/300x400&text=image2" class="img-responsive" alt=""> </div>-->
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=5"
+                  >Teaching Development Grants System(TDG)</a
+                >
+                <span>Website Design and Implementation</span>
+              </h3>
+            </div>
           </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide"><img src="images/projects/tdg/TDG_Admin_c.png" class="img-responsive" alt="">
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/chinese-revolution/ccch9005_404page_c.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <!--<div class="pf-slider"> <span class="nav-box clearfix"> <span href="#" class="slideLink prevLink">prev</span> <span href="#" class="slideLink nextLink">next</span> </span> <img src="http://placehold.it/300x225&text=image1" class="img-responsive" alt=""> <img src="http://placehold.it/300x225&text=image2" class="img-responsive" alt=""> <img src="http://placehold.it/300x225&text=image3" class="img-responsive" alt=""> </div>-->
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=6"
+                  >Chinese Cultural Revolution Website</a
+                >
+                <span>Website Design and Implementation</span>
+              </h3>
+            </div>
           </div>
-          <!--<div class="pf-slider"> <span class="nav-box clearfix"> <span href="#" class="slideLink prevLink">prev</span> <span href="#" class="slideLink nextLink">next</span> </span> <img src="http://placehold.it/300x400&text=image1" class="img-responsive" alt=""> <img src="http://placehold.it/300x400&text=image2" class="img-responsive" alt=""> <img src="http://placehold.it/300x400&text=image2" class="img-responsive" alt=""> </div>-->
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=5">Teaching Development Grants System(TDG)</a>
-              <span>Website Design and Implementation</span></h3>
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/e-learning/E-learning01_c.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=7"
+                  >E-Learning Platform and Video-Vox Website</a
+                >
+                <span>Website Design and Implementation</span>
+              </h3>
+            </div>
           </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide"><img src="images/projects/chinese-revolution/ccch9005_404page_c.png"
-              class="img-responsive" alt=""></div>
-          <!--<div class="pf-slider"> <span class="nav-box clearfix"> <span href="#" class="slideLink prevLink">prev</span> <span href="#" class="slideLink nextLink">next</span> </span> <img src="http://placehold.it/300x225&text=image1" class="img-responsive" alt=""> <img src="http://placehold.it/300x225&text=image2" class="img-responsive" alt=""> <img src="http://placehold.it/300x225&text=image3" class="img-responsive" alt=""> </div>-->
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=6">Chinese Cultural Revolution Website</a> <span>Website
-                Design and Implementation</span></h3>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide"><img src="images/projects/e-learning/E-learning01_c.png" class="img-responsive"
-              alt=""></div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=7">E-Learning Platform and Video-Vox Website</a>
-              <span>Website Design and Implementation</span></h3>
-          </div>
-        </div>
-      </li>
-      <!--<li>
+        </li>
+        <!--<li>
       <div class="listLink">
         <div class="portfolioSlide"><img src="images/projects/video-vox/videovox_course_detail_c.png" class="img-responsive" alt=""></div>
         <div class="portfolioContent">
@@ -208,348 +401,493 @@
         </div>
       </div>
     </li>-->
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide"><img src="images/projects/homepage/pre-diabete-home_c.png" class="img-responsive"
-              alt=""></div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=8">Pre-diabetes</a> <span>Mobile Application UI
-                Design</span></h3>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/homepage/pre-diabete-home_c.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=8">Pre-diabetes</a>
+                <span>Mobile Application UI Design</span>
+              </h3>
+            </div>
           </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide"><img src="images/projects/r4u/r4u-homepage.png" class="img-responsive" alt="">
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/r4u/r4u-homepage.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=9">R4U website</a>
+                <span>Website Design and Implementation</span>
+              </h3>
+            </div>
           </div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=9">R4U website</a> <span>Website Design and
-                Implementation</span></h3>
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/FEHD/FEHD.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=24">FEHD course design</a>
+                <span>Course Design and Implementation</span>
+              </h3>
+            </div>
           </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide"><img src="images/projects/FEHD/FEHD.png" class="img-responsive" alt="">
-          </div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=24">FEHD course design</a> <span>Course Design and
-                Implementation</span></h3>
-          </div>
-        </div>
-      </li>
-      
-    </ul>
-    <a href="#" class="vc">View entire collection</a>
-  </div>
-  <!--Portfolio end-->
-  <!--Hidden Portfolio start-->
-  <div class="hiddenElm">
-    <ul>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide"><img src="images/projects/homepage/GI_home_c.png" class="img-responsive" alt="">
-          </div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=10">Getting Interested System</a> <span>Mobile
-                Application UI Design</span></h3>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide">
-            <img src="images/projects/e-portfolio/E-PORTFOLIO_logoV2.0_c.jpg" class="img-responsive" alt="">
-          </div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=11">E-portfolio Project</a> <span>Mobile Application UI
-                Design</span></h3>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide"><img src="images/projects/homepage/sounds_cap_home_c.png" class="img-responsive"
-              alt=""></div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=12">Sounds Cap</a> <span>Mobile Application UI
-                Design</span></h3>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide"><img src="images/projects/grammar/Case_Grammar_c.png" class="img-responsive"
-              alt=""></div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=13">CASE Grammar</a> <span>Mobile Game UI Design</span>
-            </h3>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide"><img src="images/projects/2D-game/SNC1111Game_bg_c.png" class="img-responsive"
-              alt=""></div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=14">2D Action Game</a> <span>Game UI Design</span></h3>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide">
-            <iframe src="https://www.youtube.com/embed/CfUvjdJ22Y0" width="300" height="169" frameborder="0"
-              webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=15">MSc FYP Rimo</a> <span>Unity3D Game Design and
-                implementation</span></h3>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide">
-            <iframe src="https://www.youtube.com/embed/5mRVQAYzYes" width="300" height="169" frameborder="0"
-              webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=16">The Climbing</a> <span>Unity3D Game Design and
-                implementation</span></h3>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide">
-            <iframe src="https://www.youtube.com/embed/Jgg-_WD2NTo" width="300" height="169" frameborder="0"
-              webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=17">DIAL “CURRENT”</a> <span>Painting</span></h3>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide"><img src="images/projects/stealth/Chasing_GIF_c.gif" class="img-responsive"
-              alt=""></div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=18">3D Game “STEALTH”</a> <span>Unity3D Game Design and
-                implementation</span></h3>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide">
-            <iframe src="https://www.youtube.com/embed/bB59bDHANRY" width="300" height="169" frameborder="0"
-              webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=19">3D Penthouse</a> <span>3D Modeling</span></h3>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide">
-            <iframe src="https://www.youtube.com/embed/D_NsRlzwN7w" width="300" height="169" frameborder="0"
-              webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          </div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=20">Health Kingdom</a> <span>Mobile Application UI
-                Design</span></h3>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide"><img src="images/projects/poster/poster_eyebb2_c.png" class="img-responsive"
-              alt=""></div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=21">Poster for Department of Computer Science</a>
-              <span>Poster Design</span></h3>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide"><img src="images/projects/mathematical-web/Artboard1_c.png" class="img-responsive"
-              alt=""></div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=22">Mathematical Education Web</a> <span>Website Design
-                and Implementation</span></h3>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="listLink">
-          <div class="portfolioSlide"><img src="images/projects/homepage/self.png" class="img-responsive" alt=""></div>
-          <div class="portfolioContent">
-            <h3 class="font-openBold"><a href="project.html?key=23">Painted Graphic</a> <span>Self-painting</span></h3>
-          </div>
-        </div>
-      </li>
-
-    </ul>
-  </div>
-
-  <!--footer start-->
-  <footer class="footer">
-    <div class="container">
-      <ul class="list-unstyled footerLink">
-        <li><a href="/">home</a></li>
-        <!--<li><a href="about.html">about</a></li>
-      <li><a href="blog.html">blog</a></li>-->
-        <li><a href="" data-toggle="modal" data-target="#contactModal">contact</a></li>
+        </li>
       </ul>
-      <p class="copyrightText">© Chloe Dong 2019. All Rights reserved</p>
+      <a href="#" class="vc">View entire collection</a>
     </div>
-  </footer>
-  <!--footer end-->
-  <!--Javascriptfile start -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!--Portfolio end-->
+    <!--Hidden Portfolio start-->
+    <div class="hiddenElm">
+      <ul>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/homepage/GI_home_c.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=10">Getting Interested System</a>
+                <span>Mobile Application UI Design</span>
+              </h3>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/e-portfolio/E-PORTFOLIO_logoV2.0_c.jpg"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=11">E-portfolio Project</a>
+                <span>Mobile Application UI Design</span>
+              </h3>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/homepage/sounds_cap_home_c.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=12">Sounds Cap</a>
+                <span>Mobile Application UI Design</span>
+              </h3>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/grammar/Case_Grammar_c.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=13">CASE Grammar</a>
+                <span>Mobile Game UI Design</span>
+              </h3>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/2D-game/SNC1111Game_bg_c.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=14">2D Action Game</a>
+                <span>Game UI Design</span>
+              </h3>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <iframe
+                src="https://www.youtube.com/embed/CfUvjdJ22Y0"
+                width="300"
+                height="169"
+                frameborder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=15">MSc FYP Rimo</a>
+                <span>Unity3D Game Design and implementation</span>
+              </h3>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <iframe
+                src="https://www.youtube.com/embed/5mRVQAYzYes"
+                width="300"
+                height="169"
+                frameborder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=16">The Climbing</a>
+                <span>Unity3D Game Design and implementation</span>
+              </h3>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <iframe
+                src="https://www.youtube.com/embed/Jgg-_WD2NTo"
+                width="300"
+                height="169"
+                frameborder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=17">DIAL “CURRENT”</a>
+                <span>Painting</span>
+              </h3>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/stealth/Chasing_GIF_c.gif"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=18">3D Game “STEALTH”</a>
+                <span>Unity3D Game Design and implementation</span>
+              </h3>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <iframe
+                src="https://www.youtube.com/embed/bB59bDHANRY"
+                width="300"
+                height="169"
+                frameborder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=19">3D Penthouse</a>
+                <span>3D Modeling</span>
+              </h3>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <iframe
+                src="https://www.youtube.com/embed/D_NsRlzwN7w"
+                width="300"
+                height="169"
+                frameborder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=20">Health Kingdom</a>
+                <span>Mobile Application UI Design</span>
+              </h3>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/poster/poster_eyebb2_c.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=21"
+                  >Poster for Department of Computer Science</a
+                >
+                <span>Poster Design</span>
+              </h3>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/mathematical-web/Artboard1_c.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=22">Mathematical Education Web</a>
+                <span>Website Design and Implementation</span>
+              </h3>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/homepage/self.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=23">Painted Graphic</a>
+                <span>Self-painting</span>
+              </h3>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
 
-  <script src="js/masonry.pkgd.min.js"></script>
-  <script src="js/imagesloaded.pkgd.min.js"></script>
-  <script src="js/classie.js"></script>
-  <script src="js/colorfinder-1.1.js"></script>
-  <script src="js/gridScrollFx.js"></script>
+    <!--footer start-->
+    <footer class="footer">
+      <div class="container">
+        <ul class="list-unstyled footerLink">
+          <li><a href="/">home</a></li>
+          <!--<li><a href="about.html">about</a></li>
+      <li><a href="blog.html">blog</a></li>-->
+          <li>
+            <a href="" data-toggle="modal" data-target="#contactModal"
+              >contact</a
+            >
+          </li>
+          <li>
+            <a href="" data-toggle="modal" data-target="#resumeModal">resume</a>
+          </li>
+        </ul>
+        <p class="copyrightText">© Chloe Dong 2023.</p>
+      </div>
+    </footer>
+    <!--footer end-->
+    <!--Javascriptfile start -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
 
-  <script>
-    $(function () { $("[data-toggle='tooltip']").tooltip(); });
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/colorfinder-1.1.js"></script>
+    <script src="js/gridScrollFx.js"></script>
 
-    var masonryClass, container = $("#grid");
-    new GridScrollFx(document.getElementById('grid'), {
-      viewportFactor: 0.4
-    });
+    <script>
+      $(function () {
+        $("[data-toggle='tooltip']").tooltip();
+      });
 
-    $(function () {
-      $(".hiddenElm li").each(function (index, element) {
-        //console.log("attr added");
-        $(this).attr({ "di": index });
-      })
-      $(".vc").not(".disabled").click(function (e) {
-        e.preventDefault();
-        a = [];
-        if ($(".hiddenElm li").length > 0) {
-          $(".hiddenElm li").each(function (index, element) {
-            // console.log(index);
+      var masonryClass,
+        container = $("#grid");
+      new GridScrollFx(document.getElementById("grid"), {
+        viewportFactor: 0.4,
+      });
 
+      $(function () {
+        $(".hiddenElm li").each(function (index, element) {
+          //console.log("attr added");
+          $(this).attr({ di: index });
+        });
+        $(".vc")
+          .not(".disabled")
+          .click(function (e) {
+            e.preventDefault();
+            a = [];
+            if ($(".hiddenElm li").length > 0) {
+              $(".hiddenElm li").each(function (index, element) {
+                // console.log(index);
 
-            if (index <= 5) {
-              a.push($(this).attr("di"));
-              // console.log(a);
-              var getElm = $(this).clone(true);
-              $("#grid").append(getElm);
+                if (index <= 5) {
+                  a.push($(this).attr("di"));
+                  // console.log(a);
+                  var getElm = $(this).clone(true);
+                  $("#grid").append(getElm);
+                } else {
+                  return;
+                }
+              });
+              $.each(a, function (i) {
+                $(".hiddenElm li[di='" + a[i] + "']").remove();
+              });
+              // var getElm = $(".hiddenElm li:lt(6)").clone();
+              // $(".hiddenElm li:lt(6)").remove();
+              // $("#grid").append(getElm);
             } else {
-              return;
+              $(this).addClass("disabled").text("The End");
             }
+            $(".pf-slider").each(function (index, element) {
+              $(this).height($(this).parents("li").height() - 116);
+            });
+            new GridScrollFx(document.getElementById("grid"), {
+              viewportFactor: 0.4,
+            });
           });
-          $.each(a, function (i) {
-            $(".hiddenElm li[di='" + a[i] + "']").remove();
-          });
-          // var getElm = $(".hiddenElm li:lt(6)").clone();
-          // $(".hiddenElm li:lt(6)").remove();
-          // $("#grid").append(getElm);
-
-        } else {
-          $(this).addClass("disabled").text("The End");
-        }
         $(".pf-slider").each(function (index, element) {
           $(this).height($(this).parents("li").height() - 116);
+          $(this).find("img").css({ left: "100%" });
+          $(this).find("img:first").css({ left: 0 }).addClass("currentSlide");
+          $(this).find(".prevLink").hide();
         });
-        new GridScrollFx(document.getElementById('grid'), {
-          viewportFactor: 0.4
+        $("body").on("click", ".slideLink", function (e) {
+          //var getClass =
+          e.preventDefault();
+          var $this = $(this);
+          var getpar = $(this).parents(".pf-slider");
+          if ($(this).hasClass("nextLink")) {
+            //alert(getpar.find("img").length);
+            $(this).siblings(".prevLink").show();
+            var getcur = getpar.find(".currentSlide");
+            var nexElm = getcur.next("img");
+
+            nexElm.css({
+              left: "100%",
+              "z-index": 10,
+            });
+            nexElm.animate(
+              {
+                left: 0,
+              },
+              "slow",
+              function () {
+                getcur.css({ left: "100%" }).removeClass("currentSlide");
+                nexElm.addClass("currentSlide");
+                if (nexElm.next("img").length == 0) {
+                  $this.hide();
+                }
+              }
+            );
+          } else {
+            $(this).siblings(".nextLink").show();
+            var getcur = getpar.find(".currentSlide");
+            var preElm = getcur.prev("img");
+
+            preElm.css({
+              left: -1 * getpar.width(),
+              "z-index": 10,
+            });
+            preElm.animate(
+              {
+                left: 0,
+              },
+              "slow",
+              function () {
+                getcur.css({ left: "100%" }).removeClass("currentSlide");
+                preElm.addClass("currentSlide");
+                if (preElm.prev("img").length == 0) {
+                  $this.hide();
+                }
+              }
+            );
+          }
+        });
+      });
+    </script>
+    <script>
+      var activeImage;
+      $(document).ready(function (e) {
+        var getmaxHeight = 0;
+        $(".testimonialText li").each(function (index, element) {
+          if ($(this).height() > getmaxHeight) {
+            getmaxHeight = $(this).height();
+            $(".footerTopContent").height(getmaxHeight);
+          }
         });
 
+        $(".testimonialText li").fadeTo("fast", 0);
+        $(".testimonialText li:first").fadeTo("fast", 1);
+        $(".imageSlide .imageBox").removeClass("activeImage");
+        $(".imageSlide .imageBox:first").addClass("activeImage");
+        $(".imageSlide .imageBox").mouseenter(function () {
+          if (!$(this).hasClass("activeImage")) {
+            var gi = $(this).index();
+            //console.log(gi);
+            $(".imageSlide .imageBox").removeClass("activeImage");
+            $(this).addClass("activeImage");
+            $(".testimonialText li").fadeTo("fast", 0);
+            $(".testimonialText li:eq(" + gi + ")").fadeTo("fast", 1);
+          }
+        });
       });
-      $(".pf-slider").each(function (index, element) {
-        $(this).height($(this).parents("li").height() - 116);
-        $(this).find("img").css({ "left": "100%" });
-        $(this).find("img:first").css({ "left": 0 }).addClass("currentSlide");
-        $(this).find(".prevLink").hide();
-      });
-      $("body").on("click", ".slideLink", function (e) {
-        //var getClass =	
-        e.preventDefault();
-        var $this = $(this);
-        var getpar = $(this).parents(".pf-slider");
-        if ($(this).hasClass("nextLink")) {
-          //alert(getpar.find("img").length);
-          $(this).siblings(".prevLink").show();
-          var getcur = getpar.find(".currentSlide");
-          var nexElm = getcur.next("img");
-
-          nexElm.css({
-            "left": "100%",
-            "z-index": 10
-          });
-          nexElm.animate({
-            "left": 0
-          }, "slow",
-            function () {
-              getcur.css({ "left": "100%" }).removeClass("currentSlide");
-              nexElm.addClass("currentSlide");
-              if (nexElm.next("img").length == 0) {
-                $this.hide();
-              }
-            })
-
-        }
-        else {
-          $(this).siblings(".nextLink").show();
-          var getcur = getpar.find(".currentSlide");
-          var preElm = getcur.prev("img");
-
-          preElm.css({
-            "left": (-1 * getpar.width()),
-            "z-index": 10
-          });
-          preElm.animate({
-            "left": 0
-          }, "slow",
-            function () {
-              getcur.css({ "left": "100%" }).removeClass("currentSlide");
-              preElm.addClass("currentSlide");
-              if (preElm.prev("img").length == 0) {
-                $this.hide();
-              }
-            })
-        }
-      })
-    });
-  </script>
-  <script>
-    var activeImage;
-    $(document).ready(function (e) {
-      var getmaxHeight = 0;
-      $(".testimonialText li").each(function (index, element) {
-        if ($(this).height() > getmaxHeight) {
-          getmaxHeight = $(this).height();
-          $(".footerTopContent").height(getmaxHeight);
-        }
-      });
-
-      $(".testimonialText li").fadeTo("fast", 0);
-      $(".testimonialText li:first").fadeTo("fast", 1);
-      $(".imageSlide .imageBox").removeClass("activeImage");
-      $(".imageSlide .imageBox:first").addClass("activeImage");
-      $(".imageSlide .imageBox").mouseenter(function () {
-        if (!$(this).hasClass("activeImage")) {
-          var gi = $(this).index();
-          //console.log(gi);
-          $(".imageSlide .imageBox").removeClass("activeImage");
-          $(this).addClass("activeImage");
-          $(".testimonialText li").fadeTo("fast", 0);
-          $(".testimonialText li:eq(" + gi + ")").fadeTo("fast", 1);
-        }
-      })
-    });
-  </script>
-</body>
-
+    </script>
+  </body>
 </html>
