@@ -231,7 +231,9 @@
     <!--Portfolio start-->
     <div class="container bodyContent grid-wrap">
       <ul class="list-unstyled portfolioList grid swipe-rotate" id="grid">
+        <!-- <li><strong>Self-Exercise</strong></li> -->
         <li>
+          <!-- <strong>Self-Exercise</strong> -->
           <div class="listLink">
             <div class="portfolioSlide">
               <img
@@ -243,12 +245,33 @@
             <div class="portfolioContent">
               <h3 class="font-openBold">
                 <a href="project.html?key=25">SaveSafe App design</a
-                ><span>App Design</span>
+                ><span>App Design (Self-Exercise)</span>
               </h3>
             </div>
           </div>
         </li>
         <li>
+          <!-- <strong>Self-Exercise</strong> -->
+          <div class="listLink">
+            <div class="portfolioSlide">
+              <img
+                src="images/projects/others/applewatch-min.png"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+            <div class="portfolioContent">
+              <h3 class="font-openBold">
+                <a href="project.html?key=26">Other UI Deisgn</a
+                ><span>UI Design (Self-Exercise)</span>
+              </h3>
+            </div>
+          </div>
+        </li>
+        <!-- </ul> -->
+        <!-- <ul class="list-unstyled portfolioList grid swipe-rotate" id="grid"></ul> -->
+        <li>
+          <!-- <strong>Work Project</strong> -->
           <div class="listLink">
             <div class="portfolioSlide">
               <img
@@ -374,7 +397,7 @@
             </div>
           </div>
         </li>
-        <li>
+        <!-- <li>
           <div class="listLink">
             <div class="portfolioSlide">
               <img
@@ -392,7 +415,7 @@
               </h3>
             </div>
           </div>
-        </li>
+        </li> -->
         <!--<li>
       <div class="listLink">
         <div class="portfolioSlide"><img src="images/projects/video-vox/videovox_course_detail_c.png" class="img-responsive" alt=""></div>
@@ -685,7 +708,7 @@
             </div>
           </div>
         </li>
-        <li>
+        <!-- <li>
           <div class="listLink">
             <div class="portfolioSlide">
               <img
@@ -701,7 +724,7 @@
               </h3>
             </div>
           </div>
-        </li>
+        </li> -->
         <li>
           <div class="listLink">
             <div class="portfolioSlide">
@@ -763,6 +786,11 @@
         viewportFactor: 0.4,
       });
 
+      // var containerGridSelf = $("#grid-self");
+      // new GridScrollFx(containerGridSelf[0], {
+      //   viewportFactor: 0.4,
+      // });
+
       $(function () {
         $(".hiddenElm li").each(function (index, element) {
           //console.log("attr added");
@@ -782,6 +810,7 @@
                   // console.log(a);
                   var getElm = $(this).clone(true);
                   $("#grid").append(getElm);
+                  // $("#grid-self").append(getElm.clone());
                 } else {
                   return;
                 }

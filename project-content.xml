@@ -352,7 +352,8 @@
        <name lang="en">SafeSave APP Deisgn</name>
        <img>
           <src>images/projects/safesave-app/web.gif</src>
-          <src>images/projects/safesave-app/display02.png</src>
+          <src>images/projects/safesave-app/display02-min.png</src>
+          <src>images/projects/safesave-app/default-page-icon.png</src>
           <src>images/projects/safesave-app/app.gif</src>
           <src>images/projects/safesave-app/design_standard.png</src>    
        </img>
@@ -360,8 +361,28 @@
        <tech>Figma, Protopie, Principle, Adobe Illustrator</tech>
        <date>Mar 2023</date>
        <detail> I was the designer responsible for creating the SafeSave Conceptual UI Design. Every visual element, from the logo design to the intricacies of the design standard, was meticulously crafted by me. I created this vision through wireframes, low-fidelity and high-fidelity formats, and interactive prototypes.</detail>
+         <rlink>
+            <!-- <link>https://cloud.protopie.io/p/1a61aeada4?ui=true&scaleToFit=true&enableHotspotHints=true&cursorType=touch&mockup=true&bgColor=%23F5F5F5&playSpeed=1</link> -->
+         </rlink>
+
+   </content>
+
+   <content category="hku"> 
+       <name lang="en">Other UI Deisgn</name>
+       <img>
+          <src>images/projects/others/applewatch-min.png</src>
+          <src>images/projects/others/app-watch-min.gif</src>
+          <src>images/projects/others/BtoB-Dashboard-min.png</src>
+          <src>images/projects/others/Finance-icon-min.png</src>
+          <src>images/projects/others/Travel-icon-min.png</src>
+            
+       </img>
+       <cata>Apple Watch, BtoB Dashboard, Icon Sets</cata> 
+       <tech>Figma, Adobe Illustrator, After Effects</tech>
+       <date>May 2023</date>
+       <detail>I regularly design UI exercises showcasing dynamic dashboards, Apple Watch interfaces, and custom icon sets.</detail>
        <!-- <rlink><link>https://ic.training.jcsfl.hk/</link></rlink> -->
    </content>
-   
+
                
 </catalog>

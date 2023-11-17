@@ -3,140 +3,190 @@
 //Created by ClarkYAN on March13 2019
 
 $(function () { $("[data-toggle='tooltip']").tooltip(); });
-$(function() {
-        $('.lazy').lazy();
-    });
+$(function () {
+	$('.lazy').lazy();
+});
 
 //get the key value
 var keyValue = gup('key');
 var num = 1;
 //var url = window.location.hostname;
 
-function gup(name)
-{
- name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
- var regexS = "[\\?&]"+name+"=([^&#]*)";
- var regex = new RegExp( regexS );
- var results = regex.exec( window.location.href );
- if( results == null )
-  return "";
-else
- return results[1];
+function gup(name) {
+	name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+	var regexS = "[\\?&]" + name + "=([^&#]*)";
+	var regex = new RegExp(regexS);
+	var results = regex.exec(window.location.href);
+	if (results == null)
+		return "";
+	else
+		return results[1];
 }
 
 try //Internet Explorer  
-{  
- xmlDoc=new ActiveXObject("Microsoft.XMLDOM");  
- xmlDoc.async=false;  
- xmlDoc.load("project-content.xml");  
- 
- displayContent(keyValue);
+{
+	xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+	xmlDoc.async = false;
+	xmlDoc.load("project-content.xml");
 
-}  
-catch(e)  
-{  
- try //Firefox, Mozilla, Opera, etc.  
- {  
-  xmlDoc=document.implementation.createDocument("","",null);  
-  xmlDoc.async=false;  
-  xmlDoc.load("project-content.xml");  
-  
-  displayContent(keyValue);
+	displayContent(keyValue);
 
- }  
- catch(e)  
- {  
-  try //Google Chrome  
-  {  
-   var xmlhttp = new XMLHttpRequest();  
-   xmlhttp.open("GET", "project-content.xml", true);
-   xmlhttp.onreadystatechange = function() {
-      if (xmlhttp.readyState == 4) {
-        xmlDoc = xmlhttp.responseXML.documentElement;
-        displayContent(keyValue);
-       }
-     }
-     
-     xmlhttp.send();  
-    
-  }  
-  catch(e)  
-  {  
-   error=e.message;  
-  }  
- }  
-}  
+}
+catch (e) {
+	try //Firefox, Mozilla, Opera, etc.  
+	{
+		xmlDoc = document.implementation.createDocument("", "", null);
+		xmlDoc.async = false;
+		xmlDoc.load("project-content.xml");
 
-function displayContent(num){
+		displayContent(keyValue);
+
+	}
+	catch (e) {
+		try //Google Chrome  
+		{
+			// var xmlhttp = new XMLHttpRequest();
+			// xmlhttp.open("GET", "project-content.xml", true);
+			// xmlhttp.onreadystatechange = function () {
+			// 	if (xmlhttp.readyState == 4) {
+			// 		xmlDoc = xmlhttp.responseXML.documentElement;
+			// 		displayContent(keyValue);
+			// 	}
+			// }
+
+			// xmlhttp.send();
+
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.open("GET", "project-content.xml", true);
+			xmlhttp.onreadystatechange = function () {
+				console.log("ReadyState:", xmlhttp.readyState, "Status:", xmlhttp.status);
+				if (xmlhttp.readyState == 4) {
+					if (xmlhttp.status == 200 || xmlhttp.status == 0) { // 0 for local files (using a browser)
+						var parser = new DOMParser();
+						xmlDoc = parser.parseFromString(xmlhttp.responseText, "application/xml");
+						console.log("XML Document:", xmlDoc); // Log the XML document to see its structure
+						if (xmlDoc.documentElement.nodeName == "parsererror") {
+							console.error("Failed to parse XML document. Check for errors in the XML file.");
+						} else {
+							displayContent(keyValue);
+						}
+					} else {
+						console.error("Failed to load XML file. Status code:", xmlhttp.status);
+					}
+				}
+			};
+
+			xmlhttp.send();
+
+		}
+		catch (e) {
+			error = e.message;
+			console.error("Error:", error);
+		}
+	}
+}
+
+function displayContent(num) {
 	var id = num;
 	document.getElementById("project-name").innerHTML = xmlDoc.getElementsByTagName("name")[id].childNodes[0].nodeValue;
 	//start the img selection
 	var imgLength = getNodeLength("img", id);
-	var imgChild = xmlDoc.getElementsByTagName("img")[id];		
-    for (var j = 0; j < imgLength; j++){
-	    document.getElementById("imgFrame").innerHTML += "<div class='projectImage'><img src='" + imgChild.getElementsByTagName("src")[j].childNodes[0].nodeValue + "' class='img-responsive postImage lazy' alt='' id='img" + j + "' data-toggle='modal' data-target='#img" + j + "Modal'></div>";
-	    
-	//load the modal img
-    //id is the page of image, img id is the order of image
-    //img Modal Start
-    document.getElementById("imgFrame").innerHTML += "<div class='modal fade text-center' id= 'img" + j + "Modal' tabindex='-1' role='dialog' aria-hidden='true'><div class='modal-dialog modal-lg' style='display:inline-block;width:auto;'><div class='modal-content'><div class='card'><button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button><br /><img src='" + imgChild.getElementsByTagName("src")[j].childNodes[0].nodeValue + "' alt='' style='width:100%'></div></div></div>"; 
-	    
-    }
-    //basic information	
+	var imgChild = xmlDoc.getElementsByTagName("img")[id];
+	for (var j = 0; j < imgLength; j++) {
+		document.getElementById("imgFrame").innerHTML += "<div class='projectImage'><img src='" + imgChild.getElementsByTagName("src")[j].childNodes[0].nodeValue + "' class='img-responsive postImage lazy' alt='' id='img" + j + "' data-toggle='modal' data-target='#img" + j + "Modal'></div>";
+
+		//load the modal img
+		//id is the page of image, img id is the order of image
+		//img Modal Start
+		document.getElementById("imgFrame").innerHTML += "<div class='modal fade text-center' id= 'img" + j + "Modal' tabindex='-1' role='dialog' aria-hidden='true'><div class='modal-dialog modal-lg' style='display:inline-block;width:auto;'><div class='modal-content'><div class='card'><button type='button' class='close' data-dismiss='modal' aria-hidden='true'>&times;</button><br /><img src='" + imgChild.getElementsByTagName("src")[j].childNodes[0].nodeValue + "' alt='' style='width:100%'></div></div></div>";
+
+	}
+	console.log("XML Document:", xmlDoc); // Log the XML document to see its structure
+
+	if (!xmlDoc) {
+		console.error("Failed to parse XML document.");
+		console.error("Response Text:", xmlhttp.responseText);
+		return;
+	}
+	//basic information	
 	document.getElementById("category").innerHTML = xmlDoc.getElementsByTagName("cata")[id].childNodes[0].nodeValue;
 	document.getElementById("techniques").innerHTML = xmlDoc.getElementsByTagName("tech")[id].childNodes[0].nodeValue;
 	document.getElementById("date").innerHTML = xmlDoc.getElementsByTagName("date")[id].childNodes[0].nodeValue;
 	document.getElementById("details").innerHTML = xmlDoc.getElementsByTagName("detail")[id].childNodes[0].nodeValue;
-    //related links
+	//related links
 	var linkLength = getNodeLength("rlink", id);
 	var childLink = xmlDoc.getElementsByTagName("rlink")[id];
-	if (linkLength > 0){
-	    document.getElementById("info").innerHTML += "<h3 class='sidebarprojecttitle'>Related Links</h3><p class='sidebarEntry' id='links'></p>";
-		for (var j = 0; j < linkLength; j++){
-	    document.getElementById("links").innerHTML += "<a href='" + childLink.getElementsByTagName("link")[j].childNodes[0].nodeValue + "' target='_blank'>" + childLink.getElementsByTagName("link")[j].childNodes[0].nodeValue + "</a>" + "<br/>";
-        }
-	}      
-    
-}
-
-function getNodeLength(tag, num){
-	var nodeLink = xmlDoc.getElementsByTagName(tag)[num].childNodes; 
-	for (var i = 0; i < nodeLink.length; i++){
-		//remove the node if there is a space here
-       if(nodeLink[i].nodeType == 3 && /\s/.test(nodeLink[i].nodeValue)){
-          nodeLink[i].parentNode.removeChild(nodeLink[i]);       
-       }
+	if (linkLength > 0) {
+		document.getElementById("info").innerHTML += "<h3 class='sidebarprojecttitle'>Related Links</h3><p class='sidebarEntry' id='links'></p>";
+		for (var j = 0; j < linkLength; j++) {
+			// document.getElementById("links").innerHTML += "<a href='" + childLink.getElementsByTagName("link")[j].childNodes[0].nodeValue + "' target='_blank'>" + childLink.getElementsByTagName("link")[j].childNodes[0].nodeValue + "</a>" + "<br/>";
+			var linkNode = childLink.getElementsByTagName("link")[j];
+			if (linkNode.childNodes.length > 0) {
+				var linkValue = linkNode.childNodes[0].nodeValue;
+				document.getElementById("links").innerHTML += "<a href='" + linkValue + "' target='_blank'>" + linkValue + "</a>" + "<br/>";
+			}
+		}
 	}
-	return nodeLink.length; 
 }
 
-function previous(){
-	if (keyValue > 0){
+
+
+// }
+
+// function getNodeLength(tag, num) {
+// 	var nodeLink = xmlDoc.getElementsByTagName(tag)[num].childNodes;
+// 	for (var i = 0; i < nodeLink.length; i++) {
+// 		//remove the node if there is a space here
+// 		if (nodeLink[i].nodeType == 3 && /\s/.test(nodeLink[i].nodeValue)) {
+// 			nodeLink[i].parentNode.removeChild(nodeLink[i]);
+// 		}
+// 	}
+// 	return nodeLink.length;
+// }
+function getNodeLength(tag, num) {
+	var nodeLink = xmlDoc.getElementsByTagName(tag)[num];
+	if (nodeLink) {
+		var childNodes = nodeLink.childNodes;
+		var actualNodes = [];
+		for (var i = 0; i < childNodes.length; i++) {
+			if (childNodes[i].nodeType === 1) {
+				actualNodes.push(childNodes[i]);
+			}
+		}
+		return actualNodes.length;
+	} else {
+		return 0;
+	}
+}
+
+
+function previous() {
+	if (keyValue > 0) {
 		keyValue--;
 		var currAddr = changeURL(keyValue);
 		directTo(currAddr);
 	}
-	else{
+	else {
 		alert("Already the first post!");
 	}
 }
 
-function next(){
-	if (keyValue < xmlDoc.getElementsByTagName("content").length - 1){
+function next() {
+	if (keyValue < xmlDoc.getElementsByTagName("content").length - 1) {
 		keyValue++;
 		var currAddr = changeURL(keyValue);
 		directTo(currAddr);
 	}
-	else{
+	else {
 		alert("Already the last post!");
 	}
 }
 
-function directTo(addr){
+function directTo(addr) {
 	location.replace(addr);
 }
 
-function changeURL(num){
+function changeURL(num) {
 	var newAddr = "project.html?key=" + num;
 	return newAddr;
 }
