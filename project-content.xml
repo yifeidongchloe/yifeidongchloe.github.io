@@ -1,5 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <catalog> 
+   
+   <content category="hku"> 
+       <name lang="en">JC JoyAge holistic support</name>
+       <img>
+          <src>images/projects/joyage/joyage_homepage.png</src>
+          <src>images/projects/joyage/persona01.png</src>
+          <src>images/projects/joyage/persona02.png</src>
+          <src>images/projects/joyage/painpoint.png</src>
+          <src>images/projects/joyage/solution01.png</src>
+          <src>images/projects/joyage/joyage_rightmenu.png</src>
+          <src>images/projects/joyage/solution02.png</src>
+          <src>images/projects/joyage/joyage_map.gif</src>
+          <src>images/projects/joyage/joyage.gif</src>
+       </img>       
+       <cata>Website</cata> 
+       <tech>Wordpress,Adobe Illustrator</tech>
+       <date>May 2020 - Nov 2020</date>
+       <detail> A JC JoyAge holistic support project for elderly mental wellness.</detail>
+       <rlink><link>https://jcjoyage.hk/</link></rlink>
+   </content>
+   <content category="hku"> 
+       <name lang="en">Pre-diabetes</name>
+       <img>
+         <src>images/projects/pre-diabetes/pre-diabetes01_c.png</src>
+         <src>images/projects/pre-diabetes/persona01.png</src>
+         <src>images/projects/pre-diabetes/persona02.png</src>
+         <src>images/projects/pre-diabetes/painpoint.png</src>
+         <src>images/projects/pre-diabetes/solution01.png</src>
+         <src>images/projects/pre-diabetes/tutorial.gif</src>
+         <src>images/projects/pre-diabetes/solution02.png</src>
+          <src>images/projects/pre-diabetes/pre-diabetes_bloodpressure_c.png</src>
+          <src>images/projects/pre-diabetes/pre-diabetes.gif</src>
+       </img>        
+       <cata>Mobile Application</cata> 
+       <tech>Sketch,Adobe Photoshop,Illustrator,Proto.io</tech>
+       <date>Apr 2018 - Mar 2019</date>
+       <detail>For diabetics to record their health index and the primary users are Elders</detail>
+       <rlink>
+	      <link>https://apps.apple.com/cn/app/%E6%B8%9B%E8%B5%B0%E7%B3%96%E5%B0%BF/id1479638840</link>
+       </rlink>
+   </content>
+   <content category="hku"> 
+       <name lang="en">SafeSave APP Deisgn</name>
+       <img>
+          <src>images/projects/safesave-app/web.gif</src>
+          <src>images/projects/safesave-app/display02-min.png</src>
+          <src>images/projects/safesave-app/default-page-icon.png</src>
+          <src>images/projects/safesave-app/app.gif</src>
+          <src>images/projects/safesave-app/design_standard.png</src>    
+       </img>
+       <cata>Website</cata> 
+       <tech>Figma, Protopie, Principle, Adobe Illustrator</tech>
+       <date>Mar 2023</date>
+       <detail> I was the designer responsible for creating the SafeSave Conceptual UI Design. Every visual element, from the logo design to the intricacies of the design standard, was meticulously crafted by me. I created this vision through wireframes, low-fidelity and high-fidelity formats, and interactive prototypes.</detail>
+         <rlink>
+            <!-- <link>https://cloud.protopie.io/p/1a61aeada4?ui=true&scaleToFit=true&enableHotspotHints=true&cursorType=touch&mockup=true&bgColor=%23F5F5F5&playSpeed=1</link> -->
+         </rlink>
+
+   </content>
+
+   <content category="hku"> 
+       <name lang="en">Latest UI Deisgn</name>
+       <img>
+          <src>images/projects/others/applewatch-min.png</src>
+          <src>images/projects/others/app-watch-min.gif</src>
+          <src>images/projects/others/BtoB-Dashboard-min.png</src>
+          <src>images/projects/others/Finance-icon-min.png</src>
+          <src>images/projects/others/Travel-icon-min.png</src>
+            
+       </img>
+       <cata>Apple Watch, BtoB Dashboard, Icon Sets</cata> 
+       <tech>Figma, Adobe Illustrator, After Effects</tech>
+       <date>May 2023</date>
+       <detail>I regularly design UI exercises showcasing dynamic dashboards, Apple Watch interfaces, and custom icon sets.</detail>
+       <!-- <rlink><link>https://ic.training.jcsfl.hk/</link></rlink> -->
+   </content>
    <content category="hku"> 
        <name lang="en">Jockey Club SMART Family-Link</name>
        <img>
@@ -13,20 +89,6 @@
        <date>Mar 2021</date>
        <detail> An e-platform for Jockey Club SMART Family-Link Project to minimize administrative work and enable data-driven service</detail>
        <rlink><link>https://ic.training.jcsfl.hk/</link></rlink>
-   </content>
-   <content category="hku"> 
-       <name lang="en">JC JoyAge holistic support</name>
-       <img>
-          <src>images/projects/joyage/joyage_homepage.png</src>
-          <src>images/projects/joyage/joyage_rightmenu.png</src>
-          <src>images/projects/joyage/joyage_map.png</src>
-          <src>images/projects/joyage/joyage.gif</src>
-       </img>       
-       <cata>Website</cata> 
-       <tech>Wordpress,Adobe Illustrator</tech>
-       <date>May 2020</date>
-       <detail> A JC JoyAge holistic support project for elderly mental wellness.</detail>
-       <rlink><link>https://jcjoyage.hk/</link></rlink>
    </content>
    <content category="hku"> 
        <name lang="en">JC JoyAge research website</name>
@@ -93,7 +155,7 @@
        <detail>For students to upload their assignments and teachers analyzed their performance through data collection</detail>
        <rlink></rlink>
    </content>
-   <content category="hku"> 
+   <!-- <content category="hku"> 
        <name lang="en">E-Learning Platform and Video-Vox Website</name>
        <img>
           <src>images/projects/e-learning/E-learning01_c.png</src>
@@ -105,22 +167,7 @@
        <date>Dec 2017</date>
        <detail>For students to learn online courses and record the studying process</detail>
        <rlink></rlink>
-   </content>
-  <content category="hku"> 
-       <name lang="en">Pre-diabetes</name>
-       <img>
-          <src>images/projects/pre-diabetes/pre-diabetes_bloodpressure_c.png</src>
-          <src>images/projects/pre-diabetes/pre-diabetes01_c.png</src>
-          <src>images/projects/pre-diabetes/pre-diabetes.gif</src>
-       </img>        
-       <cata>Mobile Application</cata> 
-       <tech>Sketch,Adobe Photoshop,Illustrator,Proto.io</tech>
-       <date>Apr 2018</date>
-       <detail>For diabetics to record their health index and the primary users are Elders</detail>
-       <rlink>
-	      <link>https://apps.apple.com/cn/app/%E6%B8%9B%E8%B5%B0%E7%B3%96%E5%B0%BF/id1479638840</link>
-       </rlink>
-   </content>
+   </content> -->
    <content category="hku"> 
        <name lang="en">R4U website</name>
        <img>
@@ -348,41 +395,7 @@
        <rlink></rlink>
    </content>
 
-   <content category="hku"> 
-       <name lang="en">SafeSave APP Deisgn</name>
-       <img>
-          <src>images/projects/safesave-app/web.gif</src>
-          <src>images/projects/safesave-app/display02-min.png</src>
-          <src>images/projects/safesave-app/default-page-icon.png</src>
-          <src>images/projects/safesave-app/app.gif</src>
-          <src>images/projects/safesave-app/design_standard.png</src>    
-       </img>
-       <cata>Website</cata> 
-       <tech>Figma, Protopie, Principle, Adobe Illustrator</tech>
-       <date>Mar 2023</date>
-       <detail> I was the designer responsible for creating the SafeSave Conceptual UI Design. Every visual element, from the logo design to the intricacies of the design standard, was meticulously crafted by me. I created this vision through wireframes, low-fidelity and high-fidelity formats, and interactive prototypes.</detail>
-         <rlink>
-            <!-- <link>https://cloud.protopie.io/p/1a61aeada4?ui=true&scaleToFit=true&enableHotspotHints=true&cursorType=touch&mockup=true&bgColor=%23F5F5F5&playSpeed=1</link> -->
-         </rlink>
-
-   </content>
-
-   <content category="hku"> 
-       <name lang="en">Other UI Deisgn</name>
-       <img>
-          <src>images/projects/others/applewatch-min.png</src>
-          <src>images/projects/others/app-watch-min.gif</src>
-          <src>images/projects/others/BtoB-Dashboard-min.png</src>
-          <src>images/projects/others/Finance-icon-min.png</src>
-          <src>images/projects/others/Travel-icon-min.png</src>
-            
-       </img>
-       <cata>Apple Watch, BtoB Dashboard, Icon Sets</cata> 
-       <tech>Figma, Adobe Illustrator, After Effects</tech>
-       <date>May 2023</date>
-       <detail>I regularly design UI exercises showcasing dynamic dashboards, Apple Watch interfaces, and custom icon sets.</detail>
-       <!-- <rlink><link>https://ic.training.jcsfl.hk/</link></rlink> -->
-   </content>
+   
 
                
 </catalog>
